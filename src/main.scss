@@ -1,6 +1,52 @@
-.my-flex-container{
-    display: flex;
-  }
-  img{
-    width:300px;
-  }
+.swampy {
+background: rgb(43, 73, 43);
+width: 300px;
+height: 100px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.green {
+background: green;
+width: 300px;
+height: 300px;
+margin: 60px;
+}
+
+.red {
+background: red;
+width: 300px;
+height: 300px;
+margin: 10px;
+}
+
+.blue {
+background: blue;
+width: 300px;
+height: 300px;
+margin: 10px;
+}
+
+.yellow {
+background: yellow;
+width: 300px;
+height: 300px;
+margin: 10px;
+}
+
+.grey {
+background: grey;
+width: 940px;
+height: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 60px;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  margin:  15px;
+}
+
