@@ -1,17 +1,38 @@
-body {
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+// *body {
+//     margin: auto;
+//     font-size: 0px;
+//     }
 
-    font-size: 15px;
-    color: #333;
-    line-height: 1.6;
+.logo {
+    display: flex;
+    margin-left: 20px;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+    flex-direction: row;
+    }
 
-* {
-    box-sizing: border-box;
+ .text-logo div {
+     margin: 0 auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+ .home,
+ .about,
+ .work,
+ .blog,
+ .contact {
+    margin: 30px;
 }
