@@ -2,31 +2,58 @@
 //     margin: auto;
 //     font-size: 0px;
 //     }
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 
 .logo {
     display: flex;
     margin-left: 20px;
+    width: 200px;
     flex-wrap: nowrap;
     align-content: stretch;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
     }
 
  .text-logo div {
-     margin: 0 auto;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
 
+    .orange {
+        color: orange;
+        font-size: 2em;
+        text-align: center;
+
+    }
+
+    .rabbit {
+        color: gray;
+        font-size: 2em;
+        text-align: center;
+    }
+
 .nav {
+    width: 1200px;
     display: flex;
     justify-content: space-between;
 }
 .menu {
+    margin-bottom: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     text-align: center;
+    width: 50%;
+    justify-content: center;
 }
 
  .home,
@@ -34,5 +61,70 @@
  .work,
  .blog,
  .contact {
-    margin: 30px;
+    max-height: 100%;
+    margin-right: 30px;
 }
+
+.background {
+    display: flex;
+    height: 400px;
+}
+.background_picture {
+    border: 3px solid orange;
+    background: url(../img/big-orange-bg.png) no-repeat center top;
+    width: 100%;
+}
+
+.background_text {
+    font-size: 2em;
+    position: absolute;
+    left: 380px;
+    top: 280px;
+  }
+
+.like_rabbits {
+    background-color: gray;
+    color: orange;
+    text-transform: uppercase;
+}
+
+.like_oranges {
+    margin-top: 30px;
+    background-color: orange;
+    color: grey;
+    text-transform: uppercase;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+    }
+
+.section_text {
+
+    display: flex;
+    margin: 10px 60px;
+    }
+
+    .text {
+        margin-right: 30px;
+    }
+
+    .more {
+        margin-right: 30px;
+        text-align: right;
+        color: orange;
+    }
+
+    .section_heading {
+        font-size: 2em;
+        color: orange;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .section_img {
+        display: flex;
+    }
