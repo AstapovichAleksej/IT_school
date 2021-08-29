@@ -131,17 +131,18 @@
 
     .section_content {
         display: flex;
-        
+        flex-direction: column;
+
     }
 
     .content_img_one {
-        background: url(../src/img/Layer\ 7.png) no-repeat center top;;
+        background: url(../src/img/Layer7.png) no-repeat center top;
     }
 
     .content_img_two {
-        background: url(../src/img/Layer\ 8.png) no-repeat center top;;
+        background: url(../src/img/Layer8.png) no-repeat center top;
     }
 
     .content_img_three {
-        background: url(../src/img/Layer\ 9.png) no-repeat center top;;
+        background: url(../src/img/Layer9.png) no-repeat center top;
     } 
