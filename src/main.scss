@@ -1,52 +1,18 @@
-.swampy {
-background: rgb(43, 73, 43);
-width: 300px;
-height: 100px;
-margin-left: auto;
-margin-right: auto;
+.background {
+  position: static;
+  background-image: url(../src/img/DSC0919.jpg);
+  height: 1000px;
+  }
+
+.grey_window {
+position: static;
 
 }
 
-.green {
-background: green;
-width: 300px;
-height: 300px;
-margin: 60px;
+.question_window {
+
 }
 
-.red {
-background: red;
-width: 300px;
-height: 300px;
-margin: 10px;
-}
+.close {
 
-.blue {
-background: blue;
-width: 300px;
-height: 300px;
-margin: 10px;
 }
-
-.yellow {
-background: yellow;
-width: 300px;
-height: 300px;
-margin: 10px;
-}
-
-.grey {
-background: grey;
-width: 940px;
-height: 100px;
-margin-left: auto;
-margin-right: auto;
-margin-top: 60px;
-}
-
-.block {
-  display: flex;
-  justify-content: center;
-  margin:  15px;
-}
-
