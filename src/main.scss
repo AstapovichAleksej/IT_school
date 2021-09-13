@@ -127,3 +127,32 @@
   text-align: right;
   color: orange;
 }
+
+.main-title-text {
+  text-align: center;
+  color: orange;
+  font-size: 35px;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+.main-content-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-two {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 33%;
+}
+
+.title-content-two {
+  margin: 15px 0 15px 0;
+}
+
+.text-content-two {
+  
+}
