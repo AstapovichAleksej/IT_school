@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.scss">
-  <link rel="stylesheet" href="./fonts.scss">
+  <!-- <link rel="stylesheet" href="./fonts.scss"> -->
   <title>Layout</title>
 </head>
 <body>
@@ -88,15 +88,28 @@
       </div>
     </section>
     <section class="main-title-text">Send us a message</section>
-    <section class="form-content">
-      <div>
-        <label>Name:</label>
-        <input type="text" name>
-      </div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <section class="form-content container">
+     <form class="form" action="#">
+        <label>
+          Name:
+          <input type="text">
+        </label>
+        <label>
+          Email:
+          <input type="email">
+        </label>
+        <label>
+          Message
+          <input type="text">
+        </label>
+        <div class="button">
+          <button>Submit</button>
+        </div>       
+     </form>
     </section>
   </main>
+  <footer class="footer">
+    <p class="text-footer">Copyright orange rabbit - designed by jake bhatt.</p>
+  </footer>
 </body>
 </html>
