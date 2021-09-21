@@ -64,7 +64,8 @@
 .divide {
   display: flex;
   flex-direction: row;
-  margin: ;
+  margin: 15px 0 ;
+  
    
 
   &__heading {
@@ -85,3 +86,27 @@
     
   }
 }
+
+// .timeline {
+//   display: flex;
+  
+//   &__news {
+    
+//     display: flex;
+//     flex-direction: column;
+    
+//     &--img {
+//       width: 140px;
+//     }
+     
+
+//     &--text {
+//       // padding: 5px 13px 0 1px;
+//       text-align: left;
+//       font-size: 14px;
+      
+//     }
+
+//   }
+
+// }
