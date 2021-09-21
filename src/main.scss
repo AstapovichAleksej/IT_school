@@ -1,0 +1,24 @@
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.hero .container__left{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__news {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__news {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
