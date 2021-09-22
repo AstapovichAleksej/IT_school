@@ -4,7 +4,7 @@
 }
 
 .container__left {
-  max-width: 66%;
+  max-width: 620px;
 }
 
 .hero .container__left {
@@ -87,26 +87,28 @@
   }
 }
 
-// .timeline {
-//   display: flex;
+.timeline {
+  display: flex;
+  justify-content: space-between;
   
-//   &__news {
-    
-//     display: flex;
-//     flex-direction: column;
-    
-//     &--img {
-//       width: 140px;
-//     }
+  
+  &__news {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+
+    &--img {
+      width: 140px;
+    }
      
 
-//     &--text {
-//       // padding: 5px 13px 0 1px;
-//       text-align: left;
-//       font-size: 14px;
+    &--text {
+      padding: 5px 13px 0 1px;
+      text-align: left;
+      font-size: 14px;
       
-//     }
+    }
 
-//   }
+  }
 
-// }
+}
