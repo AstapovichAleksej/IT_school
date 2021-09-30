@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./main.scss">
+  <script src="./js/main.js" defer></script>
   <title>Document</title>
 </head>
 <body>
@@ -27,7 +30,7 @@
           </div>
           <div class="divide">
             <div class="divide__heading">Main News</div>
-            <div class="divide__border"></div>
+            <div class="divide__border border_size-mainNewa"></div>
           </div>
           <div class="timeline">
             <div class="timeline__news">
@@ -53,10 +56,10 @@
             <div class="news__column--last">
               <div class="divide">
                 <div class="divide__heading">Last News</div>
-                <div class="divide__border"></div>
+                <div class="divide__border border_size-lastNews"></div>
               </div>
               <div class="last__news">
-                <ul>
+                <ul class="news__text">
                   <li>Real Madrid players to gaffer: up and at'em!</li>
                   <li>Swedes indebted to talismanic ibrahimovic</li>
                   <li>2016 European Championship to go ahead in Frace</li>
@@ -73,13 +76,13 @@
             <div class="news__column--feed">
               <div class="divide">
                 <div class="divide__heading">Newsfeed</div>
-                <div class="divide__border"></div>
+                <div class="divide__border border_size-newsFeed"></div>
               </div>
               <div class="newsfeed">
                 <div class="newsfeed__img"><img src="./img/container__left/Layer 165.png" alt=""></div>
                 <div class="newsfeed__head">Zlatan Ibrahimovic on target as Sweden qualifi with draw in Denmark</div>
               </div>
-              <ul>
+              <ul class="news__text">
                 <li>Alvaro Morata insists Juventus are "still hungry" and targets</li>
                 <li>Ecudor stay perfect as Argentina, Brazil win</li>
                 <li>Sweden, Ukraine complete Euro lene-up</li>
@@ -103,9 +106,122 @@
           </div>
         </div>
       </div>
-      <div class="container__right"></div>
+      <div class="container__right">
+        <div class="video__news">
+          <div class="video__news--header">Видео</div>
+          <div class="video__news--content">
+            <div class="video__news--content--img">
+              <img src="./img/container__right/Layer 147.png" alt="">
+            </div>
+            <div class="video__news--content--text">Фильм дня: Гитлер Капут!</div>
+          </div>
+          <div class="video__news--content">
+            <div class="video__news--content--img">
+              <img src="./img/container__right/Layer 148.png" alt="">
+            </div>
+            <div class="video__news--content--text">Ксения Собчак беременна</div>
+          </div>
+          <div class="video__news--content">
+            <div class="video__news--content--img">
+              <img src="./img/container__right/Layer 149.png" alt="">
+            </div>
+            <div class="video__news--content--text">Группа парней избила влюбленную пару бейсбольной битой</div>
+          </div>
+          <div class="video__news--content">
+            <div class="video__news--content--img">
+              <img src="./img/container__right/Layer 150.png" alt="">
+            </div>
+            <div class="video__news--content--text">небесные ласточки: двухсерийная музыкальная комедия</div>
+          </div>
+          <div class="video__news--content">
+            <div class="video__news--content--img">
+              <img src="./img/container__right/Layer 151.png" alt="">
+            </div>
+            <div class="video__news--content--text">На дополнительном кастинге "Хочу в ВИА гру" девушек просили</div>
+          </div>
+          <div class="video__news--content--more">Больше видео</div>
+        </div>
+        <div class="interesting__news">
+          <div class="interesting__news--header">Интересные новости</div>
+          <div class="interesting__news--content">
+            <div class="interesting__news--content--img">
+              <img src="./img/container__right/Layer 103.png" alt=""></div>
+            <div class="interesting__news--content--text">Испанский палитик полностью оделаст для глянца</div>
+          </div>
+          <div class="interesting__news--content">
+            <div class="interesting__news--content--img">
+              <img src="./img/container__right/Layer 104.png" alt=""></div>
+            <div class="interesting__news--content--text">Анджелина Джоли сильно похудела</div>
+          </div>
+          <div class="interesting__news--content">
+            <div class="interesting__news--content--img">
+              <img src="./img/container__right/Layer 105.png" alt=""></div>
+            <div class="interesting__news--content--text">Исполнить мечту и умереть: История 14-летней девочки..</div>
+          </div>
+          <div class="interesting__news--content">
+            <div class="interesting__news--content--img">
+              <img src="./img/container__right/Layer 106.png" alt=""></div>
+            <div class="interesting__news--content--text">ирина Билык сказала, что думаете о повзрослевшей Алине...</div>
+          </div>
+          <div class="interesting__news--content">
+            <div class="interesting__news--content--img">
+              <img src="./img/container__right/Layer 107.png" alt=""></div>
+            <div class="interesting__news--content--text">7 "смертных грехов":чего нельзя делать в отношениях</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="footer__news"></div>
+    <div class="footer__news">
+      <div class="divide">
+        <div class="divide__heading">Обзор</div>
+        <div class="divide__border border_size-overview"></div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide-header">Знакомства</div>
+            <div class="swiper-slide-img"><img src="./img/slider/Layer 140.png" alt=""></div>
+            <div class="swiper-slide-text">Отношения актеров в кино и в реальной жизни</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-header">Знакомства</div>
+            <div class="swiper-slide-img"><img src="./img/slider/Layer 141.png" alt=""></div>
+            <div class="swiper-slide-text">Отношения актеров в кино и в реальной жизни</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-header">Знакомства</div>
+            <div class="swiper-slide-img"><img src="./img/slider/Layer 142.png" alt=""></div>
+            <div class="swiper-slide-text">Отношения актеров в кино и в реальной жизни</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-header">Приколы</div>
+            <div class="swiper-slide-img"><img src="./img/slider/Layer 143.png" alt=""></div>
+            <div class="swiper-slide-text">Отношения актеров в кино и в реальной жизни</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-header">Авто</div>
+            <div class="swiper-slide-img"><img src="./img/slider/Layer 144.png" alt=""></div>
+            <div class="swiper-slide-text">Отношения актеров в кино и в реальной жизни</div>
+          </div><div class="swiper-slide">
+            <div class="swiper-slide-header">Знакомства</div>
+            <div class="swiper-slide-img"><img src="./img/slider/Layer 145.png" alt=""></div>
+            <div class="swiper-slide-text">Отношения актеров в кино и в реальной жизни</div>
+          </div>          
+        </div>
+        <!-- If we need pagination
+        <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar
+        <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
   </div>
 </body>
 </html>
