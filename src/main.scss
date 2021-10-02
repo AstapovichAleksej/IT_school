@@ -26,13 +26,19 @@
   display: flex;
   flex-direction: row;
   background-color: rgb(215, 216, 217);
-  padding: 5px 0px 5px 0px;
-  
+  margin: 5px 0px 5px 0px;
+
   &__item {
-    margin-left: 10px;
+    padding: 5px 5px;
+    padding-left: 10px;
     font-size: 18px;
+
+    &:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
   }
- 
 }
 
 .breaking__news {
@@ -40,7 +46,7 @@
   flex-direction: row;
   border-bottom: 5px solid red;
   margin-top: 26px;
-  
+
   &--img {
     height: 250px;
   }
@@ -64,40 +70,26 @@
 .divide {
   display: flex;
   flex-direction: row;
-  margin: 15px 0 ;
-  
-   
+  margin: 15px 0;
 
   &__heading {
     font-size: 24px;
     max-width: 30%;
-    
-    // position: relative;
-    // left: 20px;
-    // top: 10px;
   }
 
   &__border {
     position: relative;
-    bottom:  6px;
+    bottom: 6px;
     border-bottom: 2px solid black;
-    min-width:80%;
-    background: transparent;    
+    min-width: 80%;
+    background: transparent;
   }
-}
-.border_size-lastNews,
-.border_size-newsFeed {
-  min-width:70%;
-  border-bottom: 2px solid rgb(255, 0, 0);
-  margin-left: 10px;
-  
 }
 
 .timeline {
   display: flex;
   justify-content: space-between;
-  
-  
+
   &__news {
     display: flex;
     flex-direction: column;
@@ -106,23 +98,18 @@
     &--img {
       max-width: 140px;
     }
-     
 
     &--text {
       padding: 5px 13px 0 1px;
       text-align: left;
       font-size: 14px;
-      
     }
-
   }
-
 }
 
-.other_news{
+.other_news {
   display: flex;
 }
-
 
 .news__text {
   padding-inline-start: 20px;
@@ -130,23 +117,45 @@
 
 .newsfeed {
   display: flex;
+  flex-direction: column;
 
-  &__img {
+  &__header {
+    font-size: 24px;
     display: flex;
-    flex-direction: column;
-    padding-left: 10px;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      position: relative;
+      bottom: 5px;
+      margin: 0 10px;
+      border-bottom: 2px solid red;
+      width: 100%;
+    }
   }
 
-  &__head {
-    padding-left: 10px;
+  &__hero {
+    display: flex;
   }
 }
-
-
 
 .photo__news {
   padding-bottom: 10px;
+  position: relative;
+
+ &--text {
+   position: relative;
+
+    &:before{
+      content: url('./img/container__left/photo.png');
+      position: absolute;
+      bottom: 106%;
+      left: 2%;
+    }
+  }
 }
+
 
 // правый контейнер
 
@@ -162,42 +171,46 @@
   display: flex;
   flex-direction: column;
 
-  
   &--header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: rgb(106,0,153);
+    color: rgb(106, 0, 153);
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    
-    
+
     &:after {
-      content: '';      
+      content: "";
       display: block;
       border-bottom: 3px solid black;
       flex: 1 0 auto;
-             
     }
-  
+
     &:before {
-      content: '';
+      content: "";
       display: block;
       border-bottom: 3px solid black;
-      flex: 1 0 auto;     
-                 
+      flex: 1 0 auto;
     }
   }
 
   &--content {
     display: flex;
     flex-direction: row;
+    position: relative;
     margin-bottom: 10px;
+   
+    &:before {
+      content: url('./img/container__right/play.png');
+      position: absolute;
+      bottom: 3%;
+      left: 1%;        
+   }
 
     &--text {
       margin-left: 10px;
-    }    
+    }
   }
 
   &--content--more {
@@ -206,22 +219,22 @@
     display: flex;
     flex-direction: column;
 
-    &::after {
-      content: '';
+    &:after {
+      content: "";
       display: block;
       border-bottom: 3px solid black;
       margin-bottom: 20px;
     }
   }
-
 }
 
+  
 .interesting__news {
   display: flex;
   flex-direction: column;
 
-  &::after {
-    content: '';
+  &:after {
+    content: "";
     display: block;
     border-bottom: 3px solid black;
   }
@@ -232,7 +245,7 @@
     flex-direction: column;
 
     &:after {
-      content: '';
+      content: "";
       display: block;
       border-bottom: 2px solid black;
       margin-bottom: 10px;
@@ -249,21 +262,17 @@
     }
 
     &:after {
-      content: '';
+      content: "";
       display: block;
       border-bottom: 3px solid black;
     }
   }
 }
 
-
-
-
 .border_size-overview {
   margin-left: 10px;
   min-width: 92%;
 }
-
 
 .swiper {
   max-width: 100%;
@@ -277,4 +286,15 @@
 .swiper-slide {
   display: flex;
   flex-direction: column;
+}
+.line {
+  content: "MainNews";
+  display: flex;
+  flex-direction: row;
+}
+.line::before {
+  content: "";
+  display: block;
+  border-bottom: 2px solid black;
+  margin-bottom: 15px;
 }
