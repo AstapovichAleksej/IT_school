@@ -3,6 +3,7 @@ body * {
 }
 
 
+
 .container {
   max-width: 940px;
   margin: 0 auto;
@@ -18,6 +19,7 @@ body * {
 }
 
 .hero__news {
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -399,8 +401,7 @@ li:hover {
   &:after {
     content: '';
     display: block;
-    position: relative;
-    flex: 1 0 auto;
+    position: relative;    
     bottom: 5px;
     width: 100%;
     margin-left: 10px;
@@ -411,6 +412,7 @@ li:hover {
 .swiper {
   max-width: 100%;
   height: auto;
+  margin: 10px;
 }
 
 .swiper-wrapper {
@@ -432,3 +434,41 @@ li:hover {
   flex-direction: column;
 }
 
+@media all and (max-width: 850px) {
+  .hero__news {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container__right {
+    margin: 0;
+    padding: 0;
+    min-width: 620px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .interesting__news {
+    margin-left: 20px;
+  }
+
+  .footer__news {  
+    max-width: 620px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }  
+
+  .footer__header {
+    max-width: 620px;
+    margin: 0;
+
+  }
+
+  .swiper {
+    max-width: 620px;
+    height: auto;
+    // margin: 10px;
+  }
+
+}
