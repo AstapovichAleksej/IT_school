@@ -435,6 +435,12 @@ li:hover {
 }
 
 @media all and (max-width: 850px) {
+
+  .container {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
   .hero__news {
     display: flex;
     flex-direction: column;
