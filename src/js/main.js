@@ -5,11 +5,11 @@ function stars(lines) {
 
         let res = "";
 
-        for (let k = 0; k < (maxStar -(i * 2) - 1) / 2; k++) {
+        for (let k = 0; k < (maxStar - (i * 2) - 1) / 2; k++) {
             res += " ";
         }
         for (let j = 0; j < (i + 1) * 2 - 1; j++) {
-            res += "*"
+            res += "*";
         }
         console.log(res);
     }
@@ -20,12 +20,12 @@ function stars(lines) {
         for (let k = 0; k < i ; k++) {
             res += " ";
         }
-        for (let j = 0; j < maxStar - i*2; j++) {
-            res += "*"
+        for (let j = 0; j < maxStar - i * 2; j++) {
+            res += "*";
         }
         console.log(res);
     }
 }
 
 
-stars(10);
+stars(19);
