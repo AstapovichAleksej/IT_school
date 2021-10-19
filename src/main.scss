@@ -1,0 +1,24 @@
+.wrapper {
+    background-image: url("./img/background.jpg");
+    background-position: center;
+}
+
+.container {
+    max-width: 1165px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgba(247, 247, 247, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 58px 0px;
+}
+
+.social a {
+    margin-right: 34px;    
+}
+
+.logo {    
+    font-size: 20px;    
+}
