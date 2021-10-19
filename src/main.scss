@@ -1,23 +1,25 @@
+body * {
+    outline: 1px solid lightgrey;
+}
+  
 .wrapper {
     background-image: url("./img/background.jpg");
-    background-position: center;
-}
-
+    
+}    
 .container {
     max-width: 1165px;
     margin: 0 auto;
 }
 
-.header {
+.header {        
     background-color: rgba(247, 247, 247, 1);
     display: flex;
     justify-content: space-between;
-    padding: 58px 0px;
-}
-
-.social {
+    padding: 58px 120px;
+    margin-bottom: 65px;
     
 }
+
 .social a {
     margin-right: 34px;    
 }
@@ -26,8 +28,45 @@
     font-size: 20px;    
 }
 
-
-.gallery img {
-    height: 255px;
-    width: 255px;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 31px;
 }
+.gallery img {
+    margin-bottom: 34px;
+    width: 265px;
+    border: 5px solid white;
+}
+
+.hero {
+    background-color: rgb(243, 245, 243);
+    display: flex;
+    flex-direction: column;
+    padding: 74px 290px;
+    
+
+    &_header {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &_text {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &_btn {        
+        text-align: center;
+
+        & button {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(42, 42, 42, 1);
+            padding: 17px 23px 15px 23px;
+        }
+    }
+} 
