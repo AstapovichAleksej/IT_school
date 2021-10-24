@@ -75,20 +75,22 @@ body * {
 
 
 .blog {
-    display: flex;
-    background-color: rgb(243, 245, 243);
-    padding: 50px 0px 70px 30px;
+    display: flex;        
        
 }
 
 .blog_post {
     display: flex;
     flex-direction: column;
-}
+}    
+
+
 
 .post {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
+    width: 70%;
+    background-color: rgb(243, 245, 243);
 
     &_hero {
     display: flex;
@@ -109,7 +111,9 @@ body * {
     }
  
 }
-
+.post:first-child{
+    margin-bottom: 40px;
+}
 
 .header-name {
     display: flex;
@@ -123,3 +127,32 @@ body * {
     justify-content: space-between;
 }
 
+
+.post_contact {
+    display: flex;
+    flex-direction: column;
+
+    &-name {
+
+    }
+
+    &-social {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+.blog_selection {    
+    width: 28%;
+}
+
+
+.footer {
+    background-color: rgba(42, 42, 42, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 58px 120px;    
+}
