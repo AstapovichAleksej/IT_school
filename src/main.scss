@@ -178,16 +178,21 @@ body * {
 
 .contact_menu {
     display: none;
+    display: flex;
+    justify-content: flex-end;
     position: absolute;
     background-color: rgba(26, 30, 30, 0.469);
-    clip-path: polygon(4% 0, 100% 0, 100% 100%, 5% 100%, 0% 50%);
-
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0% 50%);
+    width: 67px;
+    img {
+        padding: 5px 3px;
+    }
 
 }
 
 .post_contact-picture:hover .contact_menu {
     display: block;
-    left: 60px;
+    left: 50px;
     top: 25%;
 }
 
