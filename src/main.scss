@@ -103,13 +103,15 @@ body * {
 
 
 .blog {
-    display: flex;        
+    display: flex;
+    justify-content: space-between;
        
 }
 
 .blog_post {
     display: flex;
     flex-direction: column;
+    width: 70%;
 }    
 
 
@@ -117,7 +119,6 @@ body * {
 .post {
     display: flex;
     flex-direction: row;    
-    width: 70%;
     background-color: rgb(243, 245, 243);
 
     &_hero {
@@ -177,13 +178,10 @@ body * {
 }
 
 .contact_menu {
-    display: none;
-    display: flex;
-    justify-content: flex-end;
+    display: none;   
     position: absolute;
     background-color: rgba(26, 30, 30, 0.469);
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0% 50%);
-    width: 67px;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0% 50%);    
     img {
         padding: 5px 3px;
     }
@@ -191,7 +189,9 @@ body * {
 }
 
 .post_contact-picture:hover .contact_menu {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    width: 100px;
     left: 50px;
     top: 25%;
 }
@@ -199,9 +199,27 @@ body * {
 
 
 .blog_selection {    
-    width: 28%;
+    
+}
+.blog_selection-list { 
+    list-style-image: url("./img/blog/icon-list.svg");         
+    
 }
 
+.blog_selection-list li>a {
+    color: red;
+    display: none;
+}
+
+
+
+.blog_selection-list>li:hover a {
+    display: block;
+}
+
+.blog_selection-list>li:hover .blog_selection-list::marker {
+   
+}
 
 .other_news {
     display: flex;
