@@ -1,6 +1,13 @@
-body * {
-    outline: 1px solid lightgrey;
+@font-face {
+    font-family: "YanoneKaffeesatz";  
+    src: url("./fonts/YanoneKaffeesatz-VariableFont_wght.ttf");
 }
+
+body * {
+  //  outline: 1px solid lightgrey;
+   
+}
+
   
 .wrapper {
     background-image: url("./img/background.jpg");
@@ -37,10 +44,13 @@ body * {
 
 .img {
     position: relative;
+    padding-bottom: 35px;
+    
     
     img {
-        max-width: 100%;
-        max-height: 100%;
+        width: 250px;
+        height: 250px;
+        border: 5px solid white;        
     }
 
     .img_toolbar {
@@ -92,7 +102,7 @@ body * {
     &_btn {        
         text-align: center;
 
-        & button {
+        & .btn {
             font-size: 14px;
             color: rgba(255, 255, 255, 1);
             background-color: rgba(42, 42, 42, 1);
@@ -104,8 +114,7 @@ body * {
 
 .blog {
     display: flex;
-    justify-content: space-between;
-       
+    justify-content: space-between;       
 }
 
 .blog_post {
@@ -120,6 +129,10 @@ body * {
     display: flex;
     flex-direction: row;    
     background-color: rgb(243, 245, 243);
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+
 
     &_hero {
     display: flex;
@@ -127,26 +140,43 @@ body * {
 
         &-header {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between;            
         }
 
         &-title {
-
+            padding-top: 20px;
         }
 
         &-content {
             display: flex;
+            padding-top: 25px;
         }
-    }
- 
+    } 
 }
+
+.content_img {
+
+    &-picture img {
+        border: 5px solid white;
+        width: 223px;
+        height: 223px;
+        padding-bottom: 10px;
+    }
+}
+
 .post:first-child{
     margin-bottom: 40px;
 }
 
 .header-name {
+    position: relative;
     display: flex;
     flex-direction: row;
+
+    &-date {
+        position: absolute;
+        left: 268px;
+    }
     
 }
 
@@ -154,12 +184,15 @@ body * {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 35px;
 }
 
 
 .post_contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 0px 48px 0px 60px;
 
     &-name {
 
@@ -175,6 +208,11 @@ body * {
         position: relative;
     
     }
+}
+
+
+.post_contact-picture {
+    padding: 15px 0px 40px 0px;
 }
 
 .contact_menu {
@@ -196,18 +234,20 @@ body * {
     top: 25%;
 }
 
-
+.post_contact-social a {
+    padding-bottom: 15px;
+    
+}
 
 .blog_selection {    
     
 }
 .blog_selection-list { 
-    list-style-image: url("./img/blog/icon-list.svg");         
-    
+    list-style-image: url("./img/blog/icon-list.svg");
 }
 
 .blog_selection-list li>a {
-    color: red;
+    color: rgb(206, 122, 122);
     display: none;
 }
 
@@ -231,10 +271,13 @@ body * {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 43%;
+    padding: 50px 30px 0px 30px;
+    margin-bottom: 90px;
+    
 
     &-title {
-        padding-top: 20px;
+        
     }
 
     &-header {
@@ -242,27 +285,107 @@ body * {
     }
 
     &-form {
-        padding-top: 20px;
+        padding-top: 30px;
     }
 }
 
 .form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
+.input {
+    padding: 10px 50px 10px 50px;
+    margin-right: 20px;
+}
+
+.input_text {
+    padding: 10px 290px 200px 50px ;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.form label {
+    padding-top: 15px;
+    
+}
+
+.form .btn {    
+        display: block;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(42, 42, 42, 1);                
+        padding: 17px 0px 15px 0px;   
+        width: 20%;   
+}
 .other {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 48.5%;
 }
 
 .random_post {    
-    display: flex;
+    display: flex;   
     justify-content: space-between;
+    text-align: center;
 
     &-one{
         background-color: rgb(255, 255, 255);
+        
+    }
+}
+
+.random_post-one {
+    padding: 50px 30px 50px 30px;
+    justify-content: space-between;
+    
+}
+
+.random_post-first {
+    
+}
+
+.address {
+    background-color: white;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 75px;
+    text-align: center;
+
+    &_header {
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+
+    &_text {
+        padding-bottom: 15px;
+    }
+
+    &_form {
+
+
+       
+        &-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            label input{
+                height: 30px;
+                text-align: center;
+                margin-bottom: 20px;
+                padding: 10px 150px 10px 150px;
+            }            
+            
+            .btn {
+                display: block;
+                font-size: 14px;
+                color: rgba(255, 255, 255, 1);
+                background-color: rgba(42, 42, 42, 1);                
+                padding: 17px 60px 15px 60px;   
+                       
+                  
+            }    
+        }
     }
 }
 .footer {
