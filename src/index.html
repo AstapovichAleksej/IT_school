@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yanone +Kaffeesatz:wght@200;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;  300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./main.scss">
   <script src="./js/main.js"></script>
   <title>BLACK & WHITE</title>
@@ -385,13 +385,13 @@
                   <ul class="tree">
                     <li class="tree_item tree-node">              
                       <input id="label-1-1" type="checkbox" class="tree-node_input">
-                      <label class="tree-node_item"for="label-1-1">
+                      <label class="tree-node_item span-italic"for="label-1-1">
                         <span>A Picture is Worth A (..)</span>
                       </label>                      
                     </li>
                     <li class="tree_item tree-node">              
                       <input id="label-1-2" type="checkbox" class="tree-node_input">
-                      <label class="tree-node_item"for="label-1-2">
+                      <label class="tree-node_item span-italic"for="label-1-2">
                         <span>Trip to New York City was (..)</span> 
                       </label>              
                     </li>
@@ -455,7 +455,7 @@
                         <ul class="tree">
                           <li class="tree_item tree-node">              
                             <input id="label-8-1-2" type="checkbox" class="tree-node_input">
-                            <label class="tree-node_item"for="label-8-1-2">
+                            <label class="tree-node_item span-italic"for="label-8-1-2">
                               <span>A Picture is Worth A (..)</span>
                             </label>
                             <div class="tree-node_sub-items">
@@ -464,7 +464,7 @@
                           </li>
                           <li class="tree_item tree-node">              
                             <input id="label-8-1-3" type="checkbox" class="tree-node_input">
-                            <label class="tree-node_item"for="label-8-1-3">
+                            <label class="tree-node_item span-italic"for="label-8-1-3">
                               <span>Trip to New York City was (..)</span> 
                             </label>              
                           </li>                          
@@ -509,10 +509,12 @@
           <div class="contact-form">
             <form class="form" action="#">
               <label for="#">
-                <input class="input" type="text" placeholder="Your Name">*required
+                <input class="input" type="text" placeholder="Your Name">
+                <p>*required</p>
               </label>
               <label for="#">
-                <input class="input" type="email" placeholder="Your E-Mail Address">*please enter a valid address
+                <input class="input" type="email" placeholder="Your E-Mail Address">
+                <p>*<span>please enter a valid address</span></p>
               </label>
               <label for="#">
               <textarea class="input_text" type="text" placeholder="Your Message"></textarea>

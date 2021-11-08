@@ -6,7 +6,7 @@ body * {
 
   
 .wrapper {
-    background: url("../img/Background.png"), url("../img/mountains.png");
+    background-image: url("../img/mountains.png"), url("../img/background.png");
     
 }    
 .container {
@@ -15,7 +15,7 @@ body * {
 }
 
 .header {        
-    background-color: rgba(247, 247, 247, 1);
+    background-color: rgb(243, 245, 243);
     display: flex;
     justify-content: space-between;
     padding: 58px 120px;
@@ -68,7 +68,7 @@ body * {
     img {
         width: 250px;
         height: 250px;
-        border: 5px solid white;        
+        border: 5px solid rgb(243, 245, 243);        
     }
 
     .img_toolbar {
@@ -87,6 +87,26 @@ body * {
             justify-content: space-around;
             background-color: rgba(128, 128, 128, 0.8);
             margin: 5px 5px 0px 5px;
+
+            .img_toolbar_section{
+                padding: 5px 0;
+                color: rgb(243, 245, 243);
+
+                .title_name {
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                }
+            } 
+
+            .toolbar_section-date {
+                color: rgb(243, 245, 243);
+                padding: 5px 0;
+
+                .date_month {
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                }
+            }
         }
 
         &-bottom {            
@@ -95,7 +115,7 @@ body * {
             align-items: center;
             height: 50px;            
             margin: 0px 4px 0px 4px;            
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(243, 245, 243);
 
             .section_social {
                 display: flex;
@@ -147,10 +167,10 @@ body * {
     
 
     &_header {
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 28px;
+        font-weight: 500;
         text-align: center;
-        
+        letter-spacing: 2px;
         margin-bottom: 20px;
         
     }
@@ -164,12 +184,12 @@ body * {
     }
 
     &_btn {        
-        text-align: center;
+        text-align: center;        
 
-        & .btn {
+        .btn {
             font-size: 18px;
             text-transform: uppercase;            
-            color: rgba(255, 255, 255, 1);
+            color: rgb(243, 245, 243);
             background-color: rgba(42, 42, 42, 1);
             padding: 17px 23px 15px 23px;
         }
@@ -227,7 +247,7 @@ body * {
 .content_img {
 
     &-picture img {
-        border: 5px solid white;
+        border: 5px solid rgb(243, 245, 243);
         width: 223px;
         height: 223px;
         padding-bottom: 10px;
@@ -279,11 +299,17 @@ body * {
     padding-left: 35px;
 
     .content_title {
-        font-size: 20px;        
+        font-weight: 500;
+        font-size: 20px; 
+        word-spacing: 3px;
+        letter-spacing: 1px;
     }
     
     .content_text {
+        font-weight: 400;
         font-size: 17px;
+        word-spacing: 3px;
+        letter-spacing: 1px;
     }
 }
 
@@ -291,7 +317,7 @@ body * {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 48px 0px 60px;
+    padding: 30px 70px 0px 80px;
 
     &-name {
         font-size: 20px;
@@ -327,13 +353,16 @@ body * {
     width: 250px;
     
     &-name {         
-         
-        background-color: rgb(243, 241, 241);
+        font-size: 13px;
+        letter-spacing: 1px;
+        background-color: rgb(243, 245, 243);
         padding: 40px 35px 70px 35px;
         margin-bottom: 35px;
 
         p {
             text-align: center;
+            font-size: 20px;
+            font-weight: 500;
         }
     }
 }
@@ -356,7 +385,8 @@ body * {
         align-items: center;
         margin: 0;
         
-        span {
+        
+        span {            
             color: brown;
         }    
 
@@ -370,6 +400,9 @@ body * {
         }
     }     
     
+    .span-italic{
+        font-style: italic;
+    }
     
     &_input:checked + &_item:before {        
         border-style: solid;
@@ -420,7 +453,7 @@ body * {
 }
 
 .contact {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 245, 243);
     display: flex;
     flex-direction: column;
     width: 43%;
@@ -428,10 +461,13 @@ body * {
     margin-bottom: 90px;    
 
     &-title {
-        
+        font-size: 28px;
     }
 
     &-header {
+        width: 74%;
+        font-size: 14px;
+        letter-spacing: 1px;
         padding-top: 20px;
     }
 
@@ -442,16 +478,25 @@ body * {
 
 .form {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+
+    label > input ,textarea {
+        font-style: italic;
+        font-weight: 200;
+        border: 2px solid  #d6d6d6;
+    }
 }
 
 .input {
+    display: flex;
     padding: 10px 0px 10px 10px;
     width: 50%;
-    margin-right: 20px;
+    margin-right: 20px;    
+    
 }
 
 .input_text {
+    padding-top: 10px;
     padding-left: 10px;
     padding-bottom: 200px;
     width: 97%;
@@ -460,16 +505,27 @@ body * {
 }
 .form label {
     padding-top: 15px;
+    display: flex;
+
+    p {
+        font-weight: 200;
+        letter-spacing: 1px;
+        font-style: italic;
+
+        span {
+            color: #f2ba59;
+        }
+    }
     
 }
 
 .form .btn {    
         display: block;
-        font-size: 14px;
-        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+        color: rgb(243, 245, 243);
         background-color: rgba(42, 42, 42, 1);                
-        padding: 17px 0px 15px 0px;   
-        width: 20%;   
+        padding: 17px 0px 17px 0px;   
+        width: 40%;   
 }
 .other {
     display: flex;
@@ -483,7 +539,7 @@ body * {
     text-align: center;
 
     &-one{
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(243, 245, 243);
         
     }
 }
@@ -492,14 +548,23 @@ body * {
     padding: 50px 30px 50px 30px;
     justify-content: space-between;
     
+    .random-title{
+        font-size: 28px;
+        font-weight: 600;
+        text-align: left;
+        padding-bottom: 15px;
+    }
+
+    .random-text {
+        font-size: 20px;        
+        text-align: left;
+        padding-top: 15px;
+    }
 }
 
-.random_post-first {
-    
-}
 
 .address {
-    background-color: white;
+    background-color: rgb(243, 245, 243);
     padding-bottom: 50px;
     margin-top: 30px;
     margin-bottom: 75px;
@@ -511,6 +576,9 @@ body * {
     }
 
     &_text {
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: 1px;
         padding-bottom: 15px;
     }
 
@@ -526,34 +594,38 @@ body * {
             align-items: center;
 
             label {
-                width: 100%;
+                width: 100%;                
             }
 
             label input{
-                height: 30px;
-                width: 60%;
+                font-style: italic;
+                font-weight: 200;
                 text-align: center;
+                height: 30px;
+                width: 60%;                
                 margin-bottom: 20px;
                 padding: 10px 0px 10px 0px;
+                border: 2px solid  #d6d6d6;
+                           
             }            
             
             .btn {
                 display: block;
                 width: 30%;
-                font-size: 14px;
-                color: rgba(255, 255, 255, 1);
+                font-size: 18px;
+                color: rgb(243, 245, 243);
                 background-color: rgba(42, 42, 42, 1);                
-                padding: 17px 0px 15px 0px;   
-                       
-                  
+                padding: 17px 0px 15px 0px;                  
             }    
         }
     }
 }
+
+
 .footer {
     background-color: rgba(42, 42, 42, 1);
     display: flex;
     justify-content: space-between;
     padding: 58px 120px;    
-    color: white;
+    color: rgb(243, 245, 243);
 }
