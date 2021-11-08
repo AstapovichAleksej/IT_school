@@ -28,8 +28,8 @@ body * {
     
 }
 
-.social{
-    position: relative;
+.social {
+    width: 33%;
 }
 
 .social a {
@@ -46,8 +46,14 @@ body * {
 }
 
 .logo {    
-    position: absolute;
-    left: 44%;
+    width: 33%;    
+    left: 46%;
+    text-align: center;
+}
+
+.menu {
+    width: 33%;
+    text-align: right;
 }
 
 .gallery {
@@ -272,6 +278,54 @@ body * {
 .post_contact-picture {
     padding: 15px 0px 40px 0px;
 }
+
+
+.tree {
+    list-style-type: none;
+    padding: 0;
+}
+.tree-node {
+    display: flex;
+    flex-direction: column;
+
+    &_input {
+        appearance: none;
+    }
+
+    &_item {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    
+
+        &:before {
+            content: " ";
+            border-style: solid;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #8c949c;
+            display: block;
+            margin-right: 10px;
+        }
+    }     
+    
+    
+    &_input:checked + &_item:before {
+        border-style: solid;
+        border-width: 10px 10px 0 10px;
+        border-color: #393939 transparent transparent transparent;
+    }
+
+    &_sub-items {
+        padding-left: 20px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    &_input:checked ~ &_sub-items {
+       height: auto;
+    }
+}
+
 
 .contact_menu {
     display: none;   
