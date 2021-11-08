@@ -6,8 +6,9 @@ body * {
 
   
 .wrapper {
-    background-image: url("../img/mountains.png"), url("../img/background.png");
-    
+    background: url(../img/mountains.png), url(../img/Background.png);
+    background-repeat: no-repeat, repeat;
+    background-position: top center,center;
 }    
 .container {
     max-width: 1165px;
