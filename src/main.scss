@@ -1,14 +1,15 @@
-body * {
+body {
+     margin: 0;
   //  outline: 1px solid lightgrey;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+     font-family: 'Yanone Kaffeesatz', sans-serif;
 
 }
 
   
 .wrapper {
-    background: url(../img/mountains.png), url(../img/Background.png);
+    background: url(../img/mountains.png), url(../img/Background.png) ;
     background-repeat: no-repeat, repeat;
-    background-position: top center,center;
+    background-position: top ,center;
 }    
 .container {
     max-width: 1165px;
