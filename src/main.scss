@@ -1,3 +1,18 @@
 .container {
     color: brown;
 }
+
+.out {
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 30px;
+    border: 3px solid brown;
+    position: relative;
+
+    &:after {
+        content: "Вывод";
+        position: absolute;
+        left: 150px;
+    }
+}
